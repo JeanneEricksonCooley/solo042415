@@ -1,0 +1,16 @@
+.button {
+	height: 100px;
+	width: 100%;
+	background-color: turquoise;
+}
+.hello {
+	margin-left: auto;
+	margin-right: auto;
+	height: 800px;
+	content:url(flippy.jpg);
+}
+.buttonText {
+	height: 100px;
+	width: 100%;
+	background-color: turquoise;
+}
