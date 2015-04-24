@@ -1,14 +1,15 @@
 $(document).ready(function() {
 
 
-    $(".button").click(function() {
+    $(".button").on("click", function() {
 
             $.get("text.txt", function (txt) {
                 var newArray = txt.split("\n");
                 console.log(newArray);
                 for (var i = 0; i < newArray.length; i++) {
-                    $(".result").append("<div id=" + i + ">" + newArray[i] + "</div>");
+                    $(".result").append("<div class='shoutOuts'>" + newArray[i] + "</div>");
                     console.log(newArray[i]);
+                    $(".shoutOuts").hide().delay(i * 1000).slideDown();
                 }
 
             });
